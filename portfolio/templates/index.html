@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mukhtar — Waybill & Inventory Systems for Lagos SMEs</title>
+<meta name="description" content="I build lightweight internal software for Lagos logistics and retail businesses — waybill tracking, driver coordination, stock and order management. Demo in 5 minutes.">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Lagos, Nigeria · Available for projects</p>
+    <h1>I build the internal software your business is still doing on WhatsApp and spreadsheets.</h1>
+    <p class="lead">
+      Waybill tracking for dispatch companies. Stock and order systems for retailers.
+      Small, focused tools your staff actually use — running in the browser, no new hardware.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="https://wa.me/{{whatsapp}}?text=Hi%20Mukhtar%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20talk%20about%20a%20system%20for%20my%20business">Message me on WhatsApp</a>
+      <a class="btn ghost" href="#work">See the systems ↓</a>
+    </div>
+    <p class="trust">Built with Python · FastAPI · PostgreSQL · SMS integration</p>
+  </div>
+</header>
+
+<!-- PROBLEM / POSITIONING -->
+<section class="section">
+  <div class="wrap narrow">
+    <h2>Most Lagos SMEs don't need a big app. They need one thing fixed.</h2>
+    <p>
+      Growing dispatch outfits lose waybills in chat threads and field "where is my package?" calls all day.
+      Retailers count stock in a notebook and find out they're out of a fast-mover when a customer asks.
+      The fix isn't a huge platform — it's a small, reliable tool that does one job well.
+    </p>
+    <p>That's what I build. I show you a working demo first, you test it, then we build.</p>
+  </div>
+</section>
+
+<!-- WORK / CASE STUDIES -->
+<section class="section alt" id="work">
+  <div class="wrap">
+    <h2>Two systems, built end to end</h2>
+    <p class="muted">Concept demos built to show exactly how I'd solve these problems for a real business. Ask me for a live walkthrough.</p>
+
+    <!-- Case 1 -->
+    <article class="case">
+      <div class="case-text">
+        <p class="tag">Logistics · Dispatch</p>
+        <h3>Waybill &amp; Tracking System</h3>
+        <p><strong>The problem:</strong> Dispatch companies log waybills in spreadsheets and coordinate drivers over WhatsApp. Waybills go missing, customers call constantly for status, and fees are calculated by hand.</p>
+        <p><strong>What I built:</strong> A staff dashboard to log a waybill in under 30 seconds, assign a driver, and update status (Pending → Dispatched → In Transit → Delivered). Each status change automatically texts the recipient and sender. Customers track their package on a public page — no login, no phone call.</p>
+        <ul class="features">
+          <li>Staff login with session auth</li>
+          <li>Automatic SMS on every status change (Termii)</li>
+          <li>Public tracking timeline per waybill</li>
+          <li>Search by tracking code or phone number</li>
+        </ul>
+        <p class="stack">FastAPI · SQLAlchemy · Jinja2 · Termii SMS</p>
+      </div>
+      <div class="case-img">
+        <img src="/static/logistics.png" alt="Waybill tracking dashboard">
+      </div>
+    </article>
+
+    <!-- Case 2 -->
+    <article class="case reverse">
+      <div class="case-text">
+        <p class="tag">Retail · Inventory</p>
+        <h3>Stock &amp; Order Management</h3>
+        <p><strong>The problem:</strong> Neighbourhood retailers track stock in a notebook. Reordering is guesswork, sales aren't recorded against stock, and there's no customer history.</p>
+        <p><strong>What I built:</strong> A simple inventory list with low-stock alerts, a point-of-sale screen that decrements stock automatically when a sale is logged, and a printable receipt. Customer phone numbers are saved so you can follow up or text a receipt.</p>
+        <ul class="features">
+          <li>Real-time stock counts with low-stock flags</li>
+          <li>Sales automatically reduce stock</li>
+          <li>Customer records and purchase history</li>
+          <li>Optional SMS receipt to the customer</li>
+        </ul>
+        <p class="stack">FastAPI · SQLAlchemy · Jinja2 · Termii SMS</p>
+      </div>
+      <div class="case-img">
+        <img src="/static/retail.png" alt="Inventory and order dashboard">
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- HOW I WORK -->
+<section class="section">
+  <div class="wrap narrow">
+    <h2>How working with me goes</h2>
+    <ol class="steps">
+      <li><strong>Short call.</strong> You tell me what's breaking down — orders, tracking, stock. Ten minutes.</li>
+      <li><strong>Live demo.</strong> I show you a working version of the system, tailored to your business. You click through it yourself.</li>
+      <li><strong>Build.</strong> 50% deposit, then I build and check in weekly. Two to three weeks for most systems.</li>
+      <li><strong>Handover.</strong> You get the system, a walkthrough for your staff, and a month of fixes included.</li>
+    </ol>
+    <p class="muted">Ongoing maintenance is available if you want me to keep backups, fix issues, and add features as you grow.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section alt" id="contact">
+  <div class="wrap narrow center">
+    <h2>Want to see a demo for your business?</h2>
+    <p>Tell me what your team does manually today. I'll show you what the system would look like — no commitment, no cost for the demo.</p>
+    <div class="cta center">
+      <a class="btn primary" href="https://wa.me/{{whatsapp}}?text=Hi%20Mukhtar%2C%20I%27d%20like%20a%20demo%20for%20my%20business">Chat on WhatsApp</a>
+      <a class="btn ghost" href="mailto:{{email}}">Email me</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Mukhtar · Lagos, Nigeria · Built with FastAPI</p>
+  </div>
+</footer>
+
+</body>
+</html>
