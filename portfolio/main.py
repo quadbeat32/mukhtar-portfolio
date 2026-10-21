@@ -12,11 +12,14 @@ EMAIL = "arunamukhtar@gmail.com"
 
 @app.get("/", response_class=HTMLResponse)
 def index(request: Request):
-    return templates.TemplateResponse("index.html", {
-        "request": request,
-        "whatsapp": WHATSAPP,
-        "email": EMAIL,
-    })
+    return templates.TemplateResponse(
+        name="index.html", 
+        context={
+            "request": request,
+            "whatsapp": WHATSAPP,
+            "email": EMAIL,
+        }
+    )
 
 @app.get("/health")
 def health():
