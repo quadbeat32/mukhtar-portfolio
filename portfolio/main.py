@@ -13,9 +13,9 @@ EMAIL = "arunamukhtar@gmail.com"
 @app.get("/", response_class=HTMLResponse)
 def index(request: Request):
     return templates.TemplateResponse(
-        name="index.html", 
+        request=request,
+        name="index.html",
         context={
-            "request": request,
             "whatsapp": WHATSAPP,
             "email": EMAIL,
         }
